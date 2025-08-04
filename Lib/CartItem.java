@@ -33,6 +33,14 @@ public class CartItem {
         checkRep();
     }
 
+    public Product getProduct(){
+        return product;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
     /**
      * @return object Product
      */
@@ -40,6 +48,6 @@ public class CartItem {
         if(amount>0){
             this.quantity+=amount;
         }
-        checkRep();//ตรวจสอบหลังการเปลี่ยยนสถานะ
+        checkRep();//ตรวจสอบหลังการเปลี่ยนสถานะ
     }
 }
