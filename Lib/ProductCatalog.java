@@ -39,7 +39,7 @@ public class ProductCatalog {
     /**
      * ค้นหาสินค้าจากรหัสสินค้า
      * @param productiId รหัสสินค้าที่ต้องการค้นหา
-     * @return object Product หากพบ, หรือ null หากไม่พบ
+     * @return object Product หากพบ, หรือ null หากไม่พบใน catalog
      */
     public Product findById(String productId){
         for (Product p: products){
@@ -49,5 +49,5 @@ public class ProductCatalog {
         }
         return null;
     }
-}
+} 
 
